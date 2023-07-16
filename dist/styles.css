@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.content {
+    background-color: lightgrey;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+.header{
+    background-color:aquamarine;
+    height:10%;
+    display:flex;
+    align-items: center;
+    font-size: 48px;
+}
+.headerText{
+    margin-left: 50px;
+}
+.sideBar{
+    background-color: azure;
+    width:300px;
+    min-height:80%;
+    display:flex;
+    flex-direction: column;
+    /* margin - padding - gap - */
+    
+}
+.topBar{
+    height:40%;
+    display:flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top:30px;
+    margin-right:100px;
+
+}
+.topBarList{
+    padding:10px;
+    background-color: antiquewhite;
+    border:1px solid black;
+}
+.bottomBar{
+    
+    display:flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top:30px;
+    margin-right:30px;
+}
+.projectText{
+    margin-bottom: 20px;
+}
+.addProject{
+    margin-left: 20px;
+}
+
+
+.footer{
+    height: 10%;
+    background-color: darkcyan;
+}
