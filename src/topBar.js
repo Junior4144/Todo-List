@@ -24,6 +24,27 @@ const topBar = () => {
         displayWeek();
         addTask();
     })
+    inbox.addEventListener('mouseover', function() {
+        inbox.style.backgroundColor = '';
+    })
+    inbox.addEventListener('mouseout', function() {
+        inbox.style.backgroundColor = '';
+    })
+
+    today.addEventListener('mouseover', function() {
+        today.style.backgroundColor = '';
+    })
+    today.addEventListener('mouseout', function() {
+        today.style.backgroundColor = '';
+    })
+
+    week.addEventListener('mouseover', function() {
+        week.style.backgroundColor = '';
+    })
+    week.addEventListener('mouseout', function() {
+        inbox.style.backgroundColor = '';
+    })
+    
 
     
 

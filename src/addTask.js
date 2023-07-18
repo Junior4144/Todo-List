@@ -1,3 +1,4 @@
+import displayConfigDisplay from './displayConfigDisplay'
 
 const addTask = () => {
     const subContainer = document.querySelector('.subContainer');
@@ -6,8 +7,15 @@ const addTask = () => {
     addTaskContainer.classList.add('addTaskContainer');
     addTaskContainer.textContent = '+ add project';
 
+ 
 
     subContainer.appendChild(addTaskContainer);
+    
+    addTaskContainer.addEventListener('click', function() {
+        addTaskContainer.textContent = '';
+        displayConfigDisplay();
+    });
 
 }
+
 export default addTask;
