@@ -5,17 +5,25 @@ const addTask = () => {
     
     const addTaskContainer = document.createElement('div');
     addTaskContainer.classList.add('addTaskContainer');
-    addTaskContainer.textContent = '+ add project';
+    
+    const addTaskText = document.createElement('div');
+    addTaskText.textContent = '+ add project';
 
+    addTaskContainer.appendChild(addTaskText);
  
 
     subContainer.appendChild(addTaskContainer);
-    
+    //change the div to delete itself and add a new div that will be the input structure
     addTaskContainer.addEventListener('click', function() {
-        addTaskContainer.textContent = '';
+        
         displayConfigDisplay();
     });
 
+
 }
+
+
+
+
 
 export default addTask;
